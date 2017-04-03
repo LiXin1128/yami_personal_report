@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>亚米四周年-个人报告</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatiable" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!--custermize style-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/personal_report.css">
+
+	<!--fullpage scroll effect style-->
+	<link rel="stylesheet" type="text/css" href="js/jquery.fullpage.css" />
+
+	<STYLE TYPE="text/css">
+		.section.hide-section{
+			display:none !important;
+		}
+	</STYLE>
+
+</head>
+<body>
+	<div id="fullpage">
+			<div class="section" id="section1">
+				<div class="container">
+					<div class="container-fuild" id="page_1">
+						<ul>
+							<li>
+								<img src="img/report_1.png" alt="personal report" id="report_img">
+							</li>
+							<li>基于你在亚米购买，访问数据统计（统计截止至<span id="date">3月15日</span>）</li>
+						</ul>
+					</div>
+					<div class="btn" id="btn1"> 
+					    <button id="singlebutton" name="singlebutton" onclick="start();">故事开始</button> 
+					</div>
+				</div><!--container end-->
+			</div><!--section 1 end-->
+
+			<div class="section" id="section2">
+			<img id="l_icon_1" src="img/icon_1.png">
+				<div class="container">
+					<div class="container-fuild" id="page_2">
+							<p>亲爱的，看起来你还没有在亚米下过单，</br>给我们一个机会给你关怀和陪伴，</br>爱如禅，不能说不能说，但我们也莫要错过</p>
+						<div class="btn"> 
+						    <button onclick="location.href='http://promo.yamibuy.com/presnack/cn/index.html'" target="_blank" id="btn_2" name="singlebutton">现在逛逛 > </button> 
+						</div>
+					</div>
+				</div><!--container end-->
+			</div><!--section 2 end-->
+
+			<div class="section" id="section3">
+			<img id="l_icon_1" src="img/icon_1.png">
+				<div class="godown">向下滚动<img src="img/go_down.png"></div>
+				<div class="container">
+					<div class="container-fuild" id="page_3">
+						<ul>
+							<li><img src="img/unnamed-1.png"> &nbsp;你在亚米总共消费了<span id="price"></span>美元</li>
+							<li>你的消费能力在亚米排行<span id="rank_1"></span>位 &nbsp; <img src="img/unnamed.png"></li>
+							<li>&nbsp;&nbsp;&nbsp;<span id="state"></span> 排行第<span id="rank_2"></span>位</li>
+							<li><img src="img/zipcode.png">&nbsp;<span id="zipcode"></span>排行第<span id="rank"></span>位</li>
+							<li><img src="img/unnamed-2.png"> &nbsp;你一共买了<span id="num"></span>件商品</li>
+						</ul>
+					</div>
+					<div class="conversation" id="conversation_1">
+						<p></p>
+					</div>
+				</div><!--container end-->
+			</div><!--section 3 end-->
+
+			<div class="section" id="section4">
+			<img id="l_icon_1" src="img/icon_1.png">
+			<div class="godown">向下滚动<img src="img/go_down.png"></div>
+				<div class="container">
+					<div class="container-fuild" id="page_4">
+					<h2>&nbsp;你每个月买的最多商品是<img src="img/ask.png"></h2>
+						<div class="rack" id="rack">
+							<div class="item_box">
+								<a href="#" target="_blank">
+							   		<div class="item" id="item_1">
+                       
+							   		</div>
+							   	</a>  
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_2">
+
+							   		</div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_3"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_4"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_5"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_6"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_7"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_8"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_9"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_10"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_11"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_12"></div>
+							   	</a>
+							</div><!--item box end-->
+						</div><!--rack end-->
+						<div id="sen"><img src="img/sentence.png"></div>
+					</div>
+				</div><!--container end-->
+			</div><!--section 4 end-->
+
+			<div class="section" id="section5">
+			<img id="l_icon_1" src="img/icon_1.png">
+			<div class="godown">向下滚动<img src="img/go_down.png"></div>
+				<div class="container">
+					<div class="container-fuild" id="page_5">
+						<ul>
+							<p>你最常在<span id="time"></span>下单</p>
+						</ul>
+						<div class="conversation" id="conversation_3">
+								<p>作为大多数的你，</br> 不是你自制力差，</br>是亚米先动的手。</p>
+						</div>
+					</div>
+				</div><!--container end-->
+			</div><!--section 5 end-->
+
+			<div class="section" id="section6">
+			<img id="l_icon_1" src="img/icon_1.png">
+			<div class="godown">向下滚动<img src="img/go_down.png"></div>
+				<div class="container">
+					<div class="container-fuild" id="page_6">
+							<p>你有<span id="mobile_num"></span>的单都是通过手机下的</p>
+						<div class="conversation" id="conversation_4">
+							<p></p>
+						</div>
+					</div>
+				</div><!--container end-->
+			</div><!--section 6 end-->
+
+			<div class="section" id="section7">
+				<img id="l_icon_1" src="img/icon_1.png">
+				<div class="godown">向下滚动<img src="img/go_down.png"></div>
+					<div class="container">
+						<div class="container-fuild" id="page_7">
+							<ul>
+								<div id="miss_you" style="display: none;">
+									<img src="img/p_7_girl.png">
+								</div>
+								<li id="rec-2017">你今年消费最多的品类是</li>
+								<li><span id="item_thisYear"></span></li>
+								<li id="rec-2016">你去年消费最多的品类是</li>
+								<li><span id="item_lastYear"></span></li>
+							</ul>
+							<div class="conversation" id="conversation_5">
+								<p><span id="persona"></span></p >
+								<p style="display: none;"><span id="persona"></span></p >
+							</div>
+						</div>
+					</div><!--container end-->
+			</div><!--section 7 end-->
+
+			<div class="section" id="section8">
+				<div class="container">
+					<div class="container-fuild" id="page_8">
+								<p>4年了，</br>
+									亚米还是你的那个亚米，</br>
+									你不离我不弃，</br>
+									这个故事，</p>
+							<span id="last_c">未完待续。。。</span>
+					</div>
+					<div id="social_icon">
+						<a href="javascript:shareWeibo();"><img id="weibo" src="img/sina-weibo.png"></a>
+						<a href="javascript:share(1);"><img id="wechat" src="img/wechat.png"></a>
+					</div>
+					<div class="btn" id="btn3"> 
+					    <button id="lastbutton" onclick="location.href='http://promo.yamibuy.com/presnack/cn/index.html';" target="_blank" name="lastbutton">亚米4周年狂欢 点击查看</button> 
+					</div>
+				</div><!--container end-->
+			</div><!--section 8 end-->
+		</div>
+	</div><!--fullpage End-->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+	<script src="js/yamibuy.promo.js"></script>
+
+	<script>
+
+		var uStat = {
+			device:{
+				type:2, //0 iOS, 1 H5，2 PC, 3 Android,默认为iOS
+				system:'unknown',
+				store:''
+			},
+			serviceEndpoints:{
+				getReport:'http://api-t.yamibuy.com/webservice-activity/report/getUserReport',
+				getWechatSignature:'http://api-t.yamibuy.com/webservice-activity/report/getWXSignature'
+			},
+			H5:{
+				login:'http://m.yamibuy.com/login.php?external=promo&next='
+			}			
+		};
+		var uShare = {
+			universalSharedLink:'http://promo.yamibuy.com/yami_report/cn/index.html',
+			shareContent:{
+				title:'This is Title',
+				desc:'This is desc',
+				link:'',
+				imgUrl:'http://promo.yamibuy.com/test/yami_report_h5_test/img/report_1.png'
+			} 
+		};
+
+		$(document).ready(function(){
+
+			getMobileOperatingSystem();
+			//checkLogin();
+			queryOrView();
+			
+		});
+
+		/*
+			See wether the viewer is under Query Mode/Share Mode
+		*/
+		function queryOrView(){
+
+			var sourceURL = document.location.href;
+			var tkn, mode=0; // mode 0:query, 1:share
+		    var newHref = sourceURL.split("?")[0],
+		        param,
+		        params_arr = [],
+		        queryString = (sourceURL.indexOf("?") !== -1) ? sourceURL.split("?")[1] : "";
+
+		    if (queryString !== "") {
+
+		    	params_arr = queryString.split("&");
+
+		    	for (var i = params_arr.length - 1; i >= 0; i -= 1) {
+		    		param = params_arr[i].split("=")[0];
+		    		if (param === 'share') {
+		    			mode = 1;
+		    			tkn = decodeURIComponent(params_arr[i].split("=")[1]);
+		    			//Remove from url
+		    			params_arr.splice(i, 1);
+		    		}
+		    	}
+		    }
+
+
+	    	if(mode == 1){
+	    		if(params_arr.length > 0){
+	    			newHref += "?" + params_arr.join("&");
+	    		}	
+	    		window.history.pushState({}, document.title, newHref);    		
+	    	}
+	    	else{
+	    		tkn = decodeURIComponent(getCookie('YMB_TK'));
+	    	}
+
+
+	    	uStat['token'] = tkn;
+
+	    	checkLogin(tkn,mode);
+
+	    	/* Debug
+	    	if(mode == 0){
+	    		console.log("Mode::Query");
+	    		console.log("token="+tkn);
+	    	}
+	    	else{
+	    		console.log("Mode::Share");
+	    		console.log("token="+tkn);
+	    	}
+	    	*/
+	    	
+
+		}
+
+		function checkLogin(tkn,mode){
+	
+			var tknData = (mode == 0) ? {token:tkn} : {hash:tkn};
+			$.ajax({
+				method:'GET',
+				url:uStat.serviceEndpoints.getReport,
+				dataType:'JSON',
+				data:tknData
+			}).done(function(resp){
+				//console.log(resp);
+				if(resp.errorId){
+					//alert(resp.cnerrorMessage);
+					//store this info for button clicking event
+					uStat['errId'] = resp.errorId;
+					uStat['errMsg'] = resp.cnerrorMessage;
+				}
+				modifyPages(resp);
+			});
+		}
+
+		function modifyPages(resp){
+		  	var achr;
+		  	if(!$.trim(resp.user_report)){
+		  		if(resp.errorId){
+		  			//Not even logged in, just show first page
+		  			$('#section2,#section3,#section4,#section5,#section6,#section7,#section8').remove();
+		  			achr = ['1stPage'];
+		  		}
+
+		  	}
+		  	else if(resp.report_flag == 0){
+		  		//Jump to 2nd page and exit;
+		  		$('#section3,#section4,#section5,#section6,#section7,#section8').remove();
+		  		achr = ['1stPage','2ndPage'];		  		
+		  	}
+		  	else{
+		  		$('#section2').remove();
+		  		achr = ['1stPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage'];
+		  		populateData(resp.user_report);
+		  	}
+
+			$('#fullpage').fullpage({
+				anchors: achr,
+				lockAnchors:true,
+				menu: '#menu',
+				css3:true
+			});
+
+			//Initially lock the scrolling
+			$.fn.fullpage.setAllowScrolling(false, 'down');
+			$.fn.fullpage.setKeyboardScrolling(false, 'down');
+
+		}
+
+
+		function start(){
+			if($.trim(uStat.errId)){
+				//login;
+				goLogin();
+			}
+			else{
+				$.fn.fullpage.setAllowScrolling(true,'down');
+				$.fn.fullpage.setKeyboardScrolling(true, 'down');				
+				$.fn.fullpage.moveSectionDown();
+			}
+		}
+
+		function goLogin(){
+			$.yamibuy.user.displaySignIn();
+		}
+
+
+	  	function getCookie(name) {
+		  var value = "; " + document.cookie;
+		  var parts = value.split("; " + name + "=");
+		  if (parts.length == 2) return parts.pop().split(";").shift();
+		}
+
+
+
+		function populateData(rep){
+			//page 3
+			$('#price').text(rep.total_amount);
+			$('#rank_1').text(rep.rank_all);
+			$('#state').text(rep.current_state);
+			$('#rank_2').text(rep.rank_stat);
+			$('#zipcode').text(rep.current_zipcode);
+			$('#rank').text(rep.rank_zipcode)
+			$('#num').text(rep.total_goods);
+			$('#conversation_1 p').text(rep.page1_text_cn);
+
+			//page 4
+			for(var i=1; i<=12; i++){
+				var calendar = 'goods_most'+i;
+				if(!rep[calendar].goods_img){
+					//Miss you
+					$('#item_'+i).append('<div class="item-pic"><img id="item_num" src="img/mis_u.png"></div>');
+				}
+				else{
+					$('#item_'+i).append('<div class="item-pic"><img id="item_num" src="http://cdn.yamibuy.net/item/'+rep[calendar].goods_img+'_90x100.webp"></div>');					         	
+				}
+			}
+
+			//page5
+			$('#time').text(rep.page3_hour_text);
+			$('#conversation_3 p').text(rep.page3_text_cn);
+
+			//page6
+			var percent = parseFloat((rep.total_orders_android + rep.total_orders_ios + rep.total_orders_h5) * 100 / rep.total_orders).toFixed(1);
+			$('#mobile_num').text(percent+'%');
+			if(percent > 50){
+				$('#conversation_4 p').html(rep.page4_text_cn);
+			}
+			else{
+				$('#conversation_4 p').html('你造亚米还有APP吗，<br>听说帅（美）的人都在用');
+				
+			}
+
+
+			//page7
+			var persona = '';
+			if(rep.cat_most2017.cat_id){
+				persona+='说明你是一个 ';
+				$('#item_thisYear').text(rep.cat_most2017.cat_name);
+				persona = concateComment(rep.cat_most2017.cat_id,persona);
+			}
+			else{
+				//No record 2017
+				$('#rec-2017').hide();
+			}
+
+			
+
+			if(rep.cat_most2016.cat_id){
+				var dup = false;
+				if(persona!=''){
+				  if(rep.cat_most2016.cat_id == rep.cat_most2016.cat_id){
+					 dup = true;  //duplicated, not showing same comment twice
+				  }
+				  else{
+				  	persona+=',<br>一个 ';
+				  }		
+				}
+				else{
+					persona+='说明你是一个 ';
+				}
+				$('#item_lastYear').text(rep.cat_most2016.cat_name);
+				if(!dup){
+					persona = concateComment(rep.cat_most2016.cat_id,persona);
+				}
+				
+			}
+			else{
+				//No record 2016
+				$('#rec-2016').hide();
+			}
+
+			//Get nothing, show default
+			if(persona === ''){
+				$('#miss_you').show();
+				persona = concateComment(0, persona);
+			}
+
+			$('#conversation_5 p').html(persona);
+
+
+		}
+
+
+		/**
+		 * Determine the mobile operating system.
+		 * This function returns one of 'iOS', 'Android', 'Windows Phone', or 'unknown'.
+		 *
+		 * @returns {String}
+		 */
+		function getMobileOperatingSystem() {
+
+		 	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+		      // Windows Phone must come first because its UA also contains "Android"
+		    if (/windows phone/i.test(userAgent)) {
+		    	uStat.device.system = 'Windows Phone';
+		    	uStat.device.store = '';
+		        return "Windows Phone";
+		    }
+
+		    if (/android/i.test(userAgent)) {
+		    	uStat.device.system = 'Android';
+		    	uStat.device.store = 'https://play.google.com/store/apps/details?id=com.yamibuy.yamiapp';		    	
+		        return "Android";
+		    }
+
+		    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+		    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+		    	uStat.device.system = 'iOS';
+		    	uStat.device.store = 'https://itunes.apple.com/us/app/yamibuy-food-drinks-beauty/id981366229?mt=8';		    	
+		        return "iOS";
+		    }
+
+		    return "unknown";
+		}
+
+
+		function concateComment(cat_id,persona){
+				switch(cat_id){
+					case 16:
+						persona+='吃饭必吃主食';
+					break;
+					case 17:
+						persona+='对待吃比什么都认真';
+					break;
+					case 18:
+						persona+='爱吃甜食';
+					break;
+					case 19:
+						persona+='不放过盘子里最后一块肉';		
+					break;
+					case 20:
+						persona+='老干部一般生活';
+					break;
+					case 21:
+						persona+='风雨无阻不出门';
+					break;
+					//----------------------------------
+					case 22:
+						persona+='颜值一定很高';
+					break;	
+					case 23:
+						persona+='站在时尚风口浪尖';
+					break;	
+					case 24:
+						persona+='要么发型很糟要么发型极好';
+					break;						
+					case 25:
+						persona+='追求精致生活';
+					break;						
+					case 59:
+						persona+='美貌宇宙第一';
+					break;
+					//----------------------------------
+					case 26:
+						persona+='对吃胖很在意';
+					break;						
+					case 30:
+						persona+='注重养生';
+					break;						
+					case 31:
+						persona+='无视世俗眼光';
+					break;
+					//----------------------------------
+					case 27:
+						persona+='心里住着一个孩子';
+					break;						
+					case 28:
+						persona+='有丰富内心世界';
+					break;						
+					case 29:
+						persona+='很有想法';
+					break;
+					case 98:
+						persona+='';
+					break;																		
+					default:
+						persona = '近期你都没有来亚米逛逛呢，你快回来，我一人承受不来（哭泣脸）';
+					break;																	
+				}
+
+				if(cat_id>0){
+					persona+=' 的人';
+				}
+
+			return persona;
+		}
+
+
+		function getSharedLink(tkn){
+			return uShare.universalSharedLink+encodeURI(tkn);
+		}
+
+
+		function share(type){
+			if(type == 1){
+				//wechat
+				if(getWechatConfig()){
+
+					wx.config({
+					    debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+					    appId: uShare.wechat.appId, // 必填，公众号的唯一标识
+					    timestamp: uShare.wechat.timestamp, // 必填，生成签名的时间戳
+					    nonceStr: uShare.wechat.nonceStr, // 必填，生成签名的随机串
+					    signature: uShare.wechat.signature,	// 必填，签名，见附录1
+					    jsApiList: ['onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+					});
+
+
+					wx.ready(function(){
+
+						wechatShareToFriend();
+					})
+
+					wx.error(function(res){
+						alert("微信调用失败");
+						console.log(res);
+					});
+				}
+			}
+			else{
+				//weibo
+				shareWeibo();
+			}
+		}
+
+
+		function wechatShareToFriend(){
+			wx.onMenuShareAppMessage({
+			    title: uShare.wechat.shareContent.title, // 分享标题
+			    desc: uShare.wechat.shareContent.desc, // 分享描述
+			    link: uShare.wechat.shareContent.link, // 分享链接
+			    imgUrl: uShare.wechat.shareContent.imgUrl, // 分享图标
+			    type: 'link', // 分享类型,music、video或link，不填默认为link
+			    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+			    success: function () { 
+			        // 用户确认分享后执行的回调函数
+			    },
+			    cancel: function () { 
+			        // 用户取消分享后执行的回调函数
+			    }
+			});			
+		}
+
+
+		function getWechatConfig(){
+
+			$.ajax({
+				url:uStat.serviceEndpoints.getWechatSignature,
+				method:'GET',
+				dataType:'JSON',
+				data:{
+					source_flag:uStat.device.type,
+					token:encodeURI(uStat.token)
+				}
+			}).done(function(resp){
+				uShare['wechat']= {
+					share:{
+						signature:resp.signature,
+						token:resp.token,
+						appId:resp.app_id,
+						timestamp:resp.timestamp,
+						nonceStr:resp.nonceStr						
+					}
+				};
+				uShare.shareContent.link = getSharedLink(resp.token);
+
+				console.log(uShare);
+				return true;
+			})
+
+		}
+
+
+	</script>
+
+	<script>
+
+		function shareWeibo()
+	    {
+			var url = 'http://service.weibo.com/share/share.php?url='+encodeURI(uShare.universalSharedLink);
+			var title = 'title= %23陪你看剧到老%23 @乐视视频北美 @美国亚米网 我和闺蜜最爱一起吃零食、看剧啦~ 福袋君，快来跳到我碗里来！';
+			var lang = 'language=zh_cn';
+			var pic = 'pic=http://cdn.yamibuy.com/images/cn/activity/letv/letv-p0-banner.jpg';
+			var feedTitle = 'share-dialog';
+			var width = 626;
+			var height = 436;
+
+			var assembled = encodeURI(url+'&'+title+'&'+lang+'&'+pic+'&searchPic=false');
+			share(assembled,feedTitle,width,height);
+		}
+		
+		function share(url, title, w, h)
+		{
+			var left = (screen.width/2)-(w/2);
+			var top = (screen.height/2)-(h/2);
+			
+			return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+		}
+
+	</script>
+
+</body>
+</html>

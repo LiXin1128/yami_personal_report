@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>亚米四周年-个人报告</title>
+
+	<meta http-equiv="X-UA-Compatiable" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!--custermize style-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/personal_report.css">
+
+	<!--fullpage scroll effect style-->
+	<link rel="stylesheet" type="text/css" href="js/jquery.fullpage.css" />
+
+</head>
+<body>
+	<div id="fullpage">
+			<div class="section" id="section1">
+				<div class="container">
+					<div class="container-fuild" id="page_1">
+						<ul>
+							<li>
+								<img src="img/report_1.png" alt="personal report" id="report_img">
+							</li>
+							<li>Based on your purchase and visit history, we’ve made this report just for you!</li>
+						</ul>
+					</div>
+					<div class="btn" id="btn1"> 
+					    <button id="singlebutton" name="singlebutton" onclick="start();">Let's Get Started</button> 
+					</div>
+				</div><!--container end-->
+			</div><!--section 1 end-->
+
+			<div class="section" id="section2">
+			<img id="l_icon_1" src="img/icon_1.png">
+			<div class="godown">Scroll Down <img src="img/go_down.png"></div>
+				<div class="container">
+					<div class="container-fuild" id="page_2">
+							<p>Dear, it seems like you haven’t ordered anything from Yamibuy yet.</br>Give us a chance to serve you.</br>We have the best service and best products there is to offer.</p>
+						<div class="btn" id="btn2"> 
+					    	<a href="http://promo.yamibuy.com/presnack/mobile/app/en/" target="_blank" id="singlebutton_2" name="singlebutton">Shop with us now! > </a> 
+						</div>
+					</div>
+				</div><!--container end-->
+			</div><!--section 2 end-->
+
+			<div class="section" id="section3">
+			<img id="l_icon_1" src="img/icon_1.png">
+			<div class="godown">Scroll Down <img src="img/go_down.png"></div>
+				<div class="container">
+					<div class="container-fuild" id="page_3">
+						<ul>
+							<li><img src="img/unnamed-1.png"> &nbsp;You’ve spent a total of $ <span id="price"></span>while shopping at Yamibuy.</li>
+							<li>You rank&nbsp;<span id="rank_1"></span>&nbsp;in the overall Yamibuy consumer ranking, &nbsp; <img src="img/unnamed.png"></li>
+							<li><span id="rank_2"></span>in&nbsp;<span id="state"></span></li>
+							<li><img src="img/zipcode.png"><span id="rank"></span>&nbsp;in your Zipcode&nbsp;<span id="zipcode"></span></li>
+							<li><img src="img/unnamed-2.png"> &nbsp;You’ve bought&nbsp;<span id="num"></span>&nbsp;products.</li>
+						</ul>
+					</div>
+					<div class="conversation" id="conversation_1">
+						<p>You and Yamibuy are only dating, bring up the heat, will ya?</p>
+					</div>
+				</div><!--container end-->
+			</div><!--section 3 end-->
+
+			<div class="section" id="section4">
+			<img id="l_icon_1" src="img/icon_1.png">
+			<div class="godown">Scroll Down <img src="img/go_down.png"></div>
+				<div class="container">
+					<div class="container-fuild" id="page_4">
+					<p>&nbsp;Your top purchases every month.<img src="img/ask.png"></p>
+						<div class="rack" id="rack">
+							<div class="item_box">
+								<a href="#" target="_blank">
+							   		<div class="item" id="item_1"></div>
+							   	</a>  
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_2"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_3"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_4"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_5"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_6"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_7"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_8"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_9"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_10"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_11"></div>
+							   	</a>
+							   	<a href="#" target="_blank">
+							   		<div class="item" id="item_12"></div>
+							   	</a>
+							</div><!--item box end-->
+						</div><!--rack end-->
+					</div>
+				</div><!--container end-->
+			</div><!--section 4 end-->
+
+			<div class="section" id="section5">
+			<img id="l_icon_1" src="img/icon_1.png">
+			<div class="godown">Scroll Down <img src="img/go_down.png"></div>
+				<div class="container">
+					<div class="container-fuild" id="page_5">
+						<ul>
+							<p>You usually place order <br>between<span id="time"></span></p>
+						</ul>
+						<div class="conversation" id="conversation_3">
+								<p></p>
+						</div>
+					</div>
+				</div><!--container end-->
+			</div><!--section 5 end-->
+
+			<div class="section" id="section6">
+			<img id="l_icon_1" src="img/icon_1.png">
+			<div class="godown">Scroll Down <img src="img/go_down.png"></div>
+				<div class="container">
+					<div class="container-fuild" id="page_6">
+							<p><span id="mobile_num"></span>of your orders <br>are made via your phone.</p>
+						<div class="conversation" id="conversation_4">
+							<p></p>
+						</div>
+					</div>
+				</div><!--container end-->
+			</div><!--section 6 end-->
+
+			<div class="section" id="section7">
+				<img id="l_icon_1" src="img/icon_1.png">
+			<div class="godown">Scroll Down <img src="img/go_down.png"></div>
+					<div class="container">
+						<div class="container-fuild" id="page_7">
+							<ul>
+								<li id="rec-2017">For this year, you’ve purchased from the </li>
+								<li><span id="item_thisYear"></span> category the most.</li>
+								<li id="rec-2016">Last year, you’ve purchased from the</li>
+								<li><span id="item_lastYear"></span> category the most</li>
+							</ul>
+							<div class="conversation" id="conversation_5">
+								<p><span id="persona"></span></p>
+							</div>
+						</div>
+					</div><!--container end-->
+			</div><!--section 7 end-->
+
+			<div class="section" id="section8">
+				<div class="container">
+					<div class="container-fuild" id="page_8">
+								<p>4 Years, it’s been a long way.</br>
+									Yamibuy is always here for you.</br>
+									We will always be by your side.</br>
+									Our story,</p>
+							<span id="last_c">continues...</span>
+					</div>
+					<div class="btn" id="btn3"> 
+					    <a class="last_btn" id="lastbutton" href="http://promo.yamibuy.com/presnack/mobile/app/en/" target="_blank" name="lastbutton">Yamibuy 4 Year Anniversary Click Here</a> 
+					</div>
+					<div class="btn" id="btn5"> 
+					    <a class="last_btn" id="wechat_btn" href="#" target="_blank">Share to my WeChat<img src="img/wc.png" width="20px" height="20px"></a> 
+					</div>
+				</div><!--container end-->
+			</div><!--section 8 end-->
+		</div>
+	</div><!--fullpage End-->
+<!--二维码显示-->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+	<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+	<script>
+		$(function(){
+			$(".has-tip").hover(function(){ 
+				$(".qr-tip").css('display','block')
+			});
+
+			//function(){ $("#A").css('display','block')});
+			$(".has-tip").mouseout(function(){ 
+				$(".qr-tip").css('display','none')
+			});
+		});
+	</script>
+
+
+	<script>
+
+		var uStat = {
+			device:{
+				type:1, //0 iOS, 1 H5，2 PC, 3 Android,默认为iOS
+				system:'unknown',
+				store:''
+			},
+			serviceEndpoints:{
+				getReport:'http://api-t.yamibuy.com/webservice-activity/report/getUserReport',
+				getWechatSignature:'http://api-t.yamibuy.com/webservice-activity/report/getWXSignature'
+			},
+			H5:{
+				login:'http://m.yamibuy.com/login.php?external=promo&next=',
+				actEntry:'http://promo.yamibuy.com/test/yami_report/mobile/h5/en/index.html'
+			}			
+		};
+		var uShare = {
+			universalSharedLink:'http://promo.yamibuy.com/test/yami_report_h5_test_en/index.html?share=',
+			shareContent:{
+				title:'This is Title',
+				desc:'This is desc',
+				link:'',
+				imgUrl:'http://promo.yamibuy.com/test/yami_report_h5_test_en/img/report_1.png'
+			} 
+		};
+
+		$(document).ready(function(){
+
+			getMobileOperatingSystem();
+			//checkLogin();
+			queryOrView();
+			
+		});	
+
+		/*
+			See wether the viewer is under Query Mode/Share Mode
+		*/
+		function queryOrView(){
+
+			var sourceURL = document.location.href;
+			var tkn, mode=0; // mode 0:query, 1:share
+		    var newHref = sourceURL.split("?")[0],
+		        param,
+		        params_arr = [],
+		        queryString = (sourceURL.indexOf("?") !== -1) ? sourceURL.split("?")[1] : "";
+
+		    if (queryString !== "") {
+
+		    	params_arr = queryString.split("&");
+
+		    	for (var i = params_arr.length - 1; i >= 0; i -= 1) {
+		    		param = params_arr[i].split("=")[0];
+		    		if (param === 'share') {
+		    			mode = 1;
+		    			tkn = decodeURIComponent(params_arr[i].split("=")[1]);
+		    			//Remove from url
+		    			params_arr.splice(i, 1);
+		    		}
+		    	}
+		    }
+
+
+	    	if(mode == 1){
+	    		//Share mode, change url
+	    		if(params_arr.length > 0){
+	    			newHref += "?" + params_arr.join("&");
+	    		}	
+	    		window.history.pushState({}, document.title, newHref);
+
+	    		//remove share btn
+	    		$('#btn5').remove();		
+	    	}
+	    	else{
+	    		//Query mode, get token from cookie
+	    		tkn = decodeURIComponent(getCookie('YMB_TK'));
+
+	    		//remove query btn
+	    		$('#btn4').remove();
+
+	    		//Temporary
+	    		$('#btn5').remove();	
+	    	}
+
+	    	uStat['token'] = tkn;
+
+
+	    	checkLogin(tkn,mode);
+
+	    	/* Debug
+	    	if(mode == 0){
+	    		console.log("Mode::Query");
+	    		console.log("token="+tkn);
+	    	}
+	    	else{
+	    		console.log("Mode::Share");
+	    		console.log("token="+tkn);
+	    	}
+	    	*/
+
+		}
+
+		function checkLogin(tkn,mode){
+	
+			var tknData = (mode == 0) ? {token:tkn} : {hash:tkn};
+			$.ajax({
+				method:'GET',
+				url:uStat.serviceEndpoints.getReport,
+				dataType:'JSON',
+				data:tknData
+			}).done(function(resp){
+				//console.log(resp);
+				if(resp.errorId){
+					//alert(resp.cnerrorMessage);
+					//store this info for button clicking event
+					uStat['errId'] = resp.errorId;
+					uStat['errMsg'] = resp.cnerrorMessage;
+				}
+				modifyPages(resp);
+			});
+		}
+
+		function modifyPages(resp){
+		  	var achr;
+
+		  	if(!$.trim(resp.user_report)){
+		  		if(resp.errorId){
+		  			//Not even logged in, just show first page
+		  			$('#section2,#section3,#section4,#section5,#section6,#section7,#section8').remove();
+		  			achr = ['1stPage'];
+		  		}
+
+		  	}
+		  	else if(resp.report_flag == 0){
+		  		//Jump to 2nd page and exit;
+		  		$('#section3,#section4,#section5,#section6,#section7,#section8').remove();
+		  		achr = ['1stPage','2ndPage'];		  		
+		  	}
+		  	else{
+		  		$('#section2').remove();
+		  		achr = ['1stPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage'];
+
+		  		populateData(resp.user_report);
+		  	}
+
+			$('#fullpage').fullpage({
+				anchors: achr,
+				lockAnchors:true,
+				menu: '#menu',
+				css3:true
+			});
+
+			//Initially lock the scrolling
+			$.fn.fullpage.setAllowScrolling(false, 'down');
+			$.fn.fullpage.setKeyboardScrolling(false, 'down');
+
+		}
+
+
+		function start(){
+			if($.trim(uStat.errId)){
+				//login;
+				goLogin();
+			}
+			else{
+				$.fn.fullpage.setAllowScrolling(true,'down');
+				$.fn.fullpage.setKeyboardScrolling(true, 'down');				
+				$.fn.fullpage.moveSectionDown();
+			}
+		}
+
+		function goLogin(){
+			location.href=uStat.H5.login+encodeURI(window.location.href.split("#")[0]);
+		}
+
+
+	  	function getCookie(name) {
+		  var value = "; " + document.cookie;
+		  var parts = value.split("; " + name + "=");
+		  if (parts.length == 2) return parts.pop().split(";").shift();
+		}
+
+
+
+		function populateData(rep){
+			//page 3
+			$('#price').text(rep.total_amount);
+			$('#rank_1').text(rep.rank_all);
+			$('#state').text(rep.current_state);
+			$('#rank_2').text(rep.rank_stat);
+			$('#zipcode').text(rep.current_zipcode);
+			$('#rank').text(rep.rank_zipcode)
+			$('#num').text(rep.total_goods);
+			$('#conversation_1 p').text(rep.page1_text_en);
+
+			//page 4
+			for(var i=1; i<=12; i++){
+
+				var calendar = 'goods_most'+i;
+
+				if(!rep[calendar].goods_img){
+					//Miss you
+					$('#item_'+i).append('<div class="item-pic"><img id="item_num" src="img/mis_u.png"></div>');
+				}
+				else{
+					$('#item_'+i).append('<div class="item-pic"><img id="item_num" src="http://cdn.yamibuy.net/item/'+rep[calendar].goods_img+'_90x100.webp"></div>');					         	
+				}
+			}
+
+			//page5
+			$('#time').text(rep.page3_hour_text);
+			$('#conversation_3 p').html(rep.page3_text_en);
+
+			//page6
+			var percent = parseFloat((rep.total_orders_android + rep.total_orders_ios + rep.total_orders_h5) * 100 / rep.total_orders).toFixed(1);
+			$('#mobile_num').text(percent+'%');
+			if(percent > 50){
+				$('#conversation_4 p').html(rep.page4_text_en);
+			}
+			else{
+				$('#conversation_4 p').html('Did you know that Yamibuy has an APP? <br>All the good looking people uses the APP. <br><a id="app_download" href="'+uStat.device.store+'">Download it now!</a>');
+			}
+
+
+			//page7
+			var persona = '';
+			if(rep.cat_most2017.cat_id){
+				persona+='It means that you ';
+				$('#item_thisYear').text(rep.cat_most2017.cat_ename);
+				persona = concateComment(rep.cat_most2017.cat_id,persona);
+			}
+			else{
+				//No record 2017
+				$('#rec-2017').hide();
+			}
+
+			
+
+			if(rep.cat_most2016.cat_id){
+				var dup = false;
+				if(persona!=''){
+				  if(rep.cat_most2016.cat_id == rep.cat_most2016.cat_id){
+					 dup = true;  //duplicated, not showing same comment twice
+				  }
+				  else{
+				  	persona+=',<br> ';
+				  }		
+				}
+				else{
+					persona+='It means that you ';
+				}
+				$('#item_lastYear').text(rep.cat_most2016.cat_ename);
+				if(!dup){
+					persona = concateComment(rep.cat_most2016.cat_id,persona);
+				}
+				
+			}
+			else{
+				//No record 2016
+				$('#rec-2016').hide();
+			}
+
+			//Get nothing, show default
+			if(persona === ''){
+				$('#miss_you').show();
+				persona = concateComment(0, persona);
+			}
+
+			$('#conversation_5 p').html(persona);
+
+		}
+
+		/**
+		 * Determine the mobile operating system.
+		 * This function returns one of 'iOS', 'Android', 'Windows Phone', or 'unknown'.
+		 *
+		 * @returns {String}
+		 */
+		function getMobileOperatingSystem() {
+
+			var type = 'unknown';
+		 	var userAgent = navigator.userAgent || navigator.vendor || window.opera,
+		 		standalone = window.navigator.standalone,
+		 		chrome = /CriOS/i.test(userAgent),
+			    safari = /safari/.test( userAgent ) && !/CriOS/i.test(userAgent);	 	
+		 	//console.log(userAgent);
+
+		      // Windows Phone must come first because its UA also contains "Android"
+		    if (/windows phone/i.test(userAgent)) {
+		    	uStat.device.type = 4;
+		    	uStat.device.store = '';
+		        type = "Windows Phone";
+		    }
+
+		    if (/android/i.test(userAgent)) {
+		    	uStat.device.system = 'Android';
+		    	uStat.device.type = 3;
+		    	uStat.device.store = 'https://play.google.com/store/apps/details?id=com.yamibuy.yamiapp';		    	
+		        type = "Android";
+
+			    if (!standalone && chrome) {
+			        //browser
+			        //jump to H5
+			        uStat.device.system = 'browser';
+			        location.href = uStat.H5.actEntry;
+
+			    } else if ( standalone && !safari ) {
+			        //standalone
+			    } else if ( !standalone && !safari ) {
+			        //uiwebview
+			        if(/MicroMessenger/i.test(userAgent)){
+			        	//jump to H5
+			        	uStat.device.system = 'wechat';
+			        	location.href = uStat.H5.actEntry;
+
+			        }
+			        else{
+			        	//app uiview
+			        	uStat.device.system = 'app';
+			        }
+				}
+
+		    }
+
+		    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+		    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+		    	uStat.device.type = 0;
+		    	uStat.device.store = 'https://itunes.apple.com/us/app/yamibuy-food-drinks-beauty/id981366229?mt=8';		    	
+		        type = "iOS";
+
+			    if (!standalone && (safari || chrome) ) {
+			        //browser
+			        //jump to H5
+			        uStat.device.system = 'browser';
+			        location.href = uStat.H5.actEntry;
+
+			    } else if ( standalone && !safari ) {
+			        //standalone
+			    } else if ( !standalone && !safari ) {
+			        //uiwebview
+			        if(/MicroMessenger/i.test(userAgent)){
+			        	//jump to H5
+			        	uStat.device.system = 'wechat';
+			        	location.href = uStat.H5.actEntry;
+
+			        }
+			        else{
+			        	//app uiview
+			        	uStat.device.system = 'app';
+			        }
+				}
+
+		    }
+
+		    return type;
+		}
+
+		function concateComment(cat_id,persona){
+				switch(cat_id){
+					case 16:
+						persona+='cannot live without sweets.';
+					break;
+					case 17:
+						persona+='are the most diligent foodie there is.';
+					break;
+					case 18:
+						persona+='have a sweet tooth.';
+					break;
+					case 19:
+						persona+='always clean up your plate.';		
+					break;
+					case 20:
+						persona+='have a stressful life.';
+					break;
+					case 21:
+						persona+='are someone who never leaves the house.';
+					break;
+					//----------------------------------
+					case 22:
+						persona+='are well beyond good looking.';
+					break;	
+					case 23:
+						persona+='keep up with the latest trends.';
+					break;	
+					case 24:
+						persona+='either have really great hair, or your hair needs extra care.';
+					break;						
+					case 25:
+						persona+='lead a luxurious lifestyle.';
+					break;						
+					case 59:
+						persona+='are the fairest of them all.';
+					break;
+					//----------------------------------
+					case 26:
+						persona+='care very much about your weight.';
+					break;						
+					case 30:
+						persona+='care very much about your health.';
+					break;						
+					case 31:
+						persona+='live a happy and healthy life.';
+					break;
+					//----------------------------------
+					case 27:
+						persona+='love your baby very much.';
+					break;						
+					case 28:
+						persona+='have a rich inner personality.';
+					break;						
+					case 29:
+						persona+='have an unique way of living.';
+					break;
+					case 98:
+						persona+='';
+					break;
+					default:
+						persona = 'Most importantly!! You haven’t shopped at Yamibuy in a while, we want you back!';
+					break;																	
+				}
+
+				
+			return persona;
+		}
+
+
+
+		function getSharedLink(tkn){
+			return uShare.universalSharedLink+encodeURI(tkn);
+		}
+
+
+		function share(type){
+			if(type == 1){
+				//wechat
+				getWechatConfig();
+			}
+			else{
+				//weibo
+			}
+		}
+
+
+
+		function getWechatConfig(){
+			$.ajax({
+				url:uStat.serviceEndpoints.getWechatSignature,
+				method:'GET',
+				dataType:'JSON',
+				data:{
+					source_flag:uStat.device.type,
+					token:encodeURI(uStat.token)
+				}
+			}).done(function(resp){
+				uShare['wechat']= {
+					share:{
+						signature:resp.signature,
+						token:resp.token,
+						appId:resp.app_id,
+						timestamp:resp.timestamp,
+						nonceStr:resp.noncestr						
+					}
+				};
+				uShare.shareContent.link = getSharedLink(resp.token);
+
+				console.log(uShare);
+				shareWechat();
+			})
+		}
+
+		function shareWechat(){
+			wx.config({
+			    debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+			    appId: uShare.wechat.share.appId, // 必填，公众号的唯一标识
+			    timestamp: uShare.wechat.share.timestamp, // 必填，生成签名的时间戳
+			    nonceStr: uShare.wechat.share.nonceStr, // 必填，生成签名的随机串
+			    signature: uShare.wechat.share.signature,// 必填，签名，见附录1
+			    jsApiList: ['onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+			}) ;
+
+
+			wx.ready(function(){
+
+				wechatShareToFriend();
+			})
+
+			wx.error(function(res){
+				alert("微信调用失败！");
+				console.log(res);
+			});
+		}
+
+
+
+		function wechatShareToFriend(){
+			wx.onMenuShareAppMessage({
+			    title: uShare.shareContent.title, // 分享标题
+			    desc: uShare.shareContent.desc, // 分享描述
+			    link: uShare.shareContent.link, // 分享链接
+			    imgUrl: uShare.shareContent.imgUrl, // 分享图标
+			    type: 'link', // 分享类型,music、video或link，不填默认为link
+			    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+			    success: function () { 
+			        // 用户确认分享后执行的回调函数
+			    },
+			    cancel: function () { 
+			        // 用户取消分享后执行的回调函数
+			    }
+			});			
+		}		
+
+
+	</script>
+
+</body>
+</html>
